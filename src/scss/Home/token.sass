@@ -1,0 +1,51 @@
+.token
+  background-image: url('src/assets/token/bg.png')
+  &-wrapper
+    display: flex
+    padding: 140px 0
+    flex-direction: column
+    align-items: center
+  &-header
+    gap: 28px
+    display: flex
+    align-items: center
+    margin-bottom: 70px
+    &__title
+      @include adaptive-font-size(30, 48)
+      font-weight: 700
+  &__text
+    @include adaptive-font-size(18, 24)
+    font-weight: 400
+    max-width: 1390px
+    text-align: center
+    margin-bottom: 40px
+  &__contact
+    font-weight: 400
+    @include adaptive-font-size(18, 24)
+
+@media (max-width: 990px)
+  .token-wrapper
+    padding: 100px 0
+@media (max-width: 770px)
+  .token
+    &-header
+      margin-bottom: 40px
+    &-wrapper
+      padding: 60px 0
+@media (max-width: 500px)
+  .token
+    &-header
+      gap: 15px
+      white-space: nowrap
+    &-wrapper
+      padding: 40px 0
+
+
+
+
+
+
+
+
+
+

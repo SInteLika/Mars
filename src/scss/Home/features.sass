@@ -1,0 +1,100 @@
+.features
+  position: relative
+  display: flex
+  flex-direction: column
+  margin-bottom: 38px
+  &__title
+    position: relative
+    left: -250px
+    align-self: flex-end
+    @include adaptive-font-size(30, 40)
+    font-weight: 600
+    margin-bottom: 60px
+  &__img
+    max-width: 100%
+    position: absolute
+    right: -100px
+    top: -170px
+    width: 300px
+    height: 313px
+    & img
+      width: 100%
+  &-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    gap: 50px
+    margin-bottom: 68px
+    &-item
+      margin-bottom: 30px
+      z-index: 2
+      text-align: center
+      display: flex
+      align-items: center
+      flex-direction: column
+      justify-content: space-around
+      backdrop-filter: blur(10px)
+      background: rgba(66, 32, 106, 0.5)
+      width: 413px
+      min-width: 413px
+      height: 397px
+      &__img
+        position: relative
+        margin-top: -50px
+      &__title
+        @include adaptive-font-size(25, 30)
+        font-weight: 700
+      &__text
+        font-weight: 400
+        @include adaptive-font-size(15, 18)
+      &_yellow
+        box-shadow: 0 4px 50px 0 #fffe90
+      &_red
+        box-shadow: 0 4px 50px 0 #f75e5c
+      &__img
+        width: 244px
+        height: 208px
+      &-wrapper
+        position: relative
+      &__orange1
+        z-index: -1
+        position: absolute
+        right: 50px
+        bottom: 0
+      &__orange2
+        position: absolute
+        z-index: -1
+        bottom: 0
+        left: 15px
+@media(max-width: 1550px)
+  .features
+    &-list
+      justify-content: space-around
+@media(max-width: 800px)
+  .features
+    &__title
+      left: 0
+      align-self: center
+    &-list
+      align-items: center
+      justify-content: center
+    &__img
+      display: none
+@media(max-width: 600px)
+  .features
+    &-list
+      &-item
+        min-width: 300px
+        width: 350px
+        height: 360px
+        padding-inline: 10px
+@media(max-width: 400px)
+  .features
+    &-list
+      &-item
+        width: 280px
+        padding-inline: 10px
+
+
+
+

@@ -1,0 +1,51 @@
+.btn
+  cursor: pointer
+  position: relative
+  overflow: visible
+  user-select: none
+  &:active
+    transform: translateY(2px)
+  &__text
+    font-weight: 500
+    font-size: 20px
+    line-height: 150%
+
+.btn-wrapper
+  position: relative
+  cursor: pointer
+  &:active
+    transform: translateY(2px)
+    &::after
+      top: 22px
+      position: absolute
+      display: block
+      content: ''
+      width: 237px
+      height: 60px
+      box-shadow: -5px 5px 36px rgba(197, 14, 87, 0.36), 10px 10px 36px rgba(254, 223, 103, 0.36)
+
+.btnFill
+  overflow: visible
+  &__text
+    font-weight: 700
+    font-size: 30px
+  &-wrapper
+    position: relative
+    cursor: pointer
+    &:active
+      transform: translateY(2px)
+      &::after
+        top: 25px
+        position: absolute
+        display: block
+        content: ''
+        width: 310px
+        height: 80px
+        box-shadow: -5px 5px 36px rgba(197, 14, 87, 0.36), 10px 10px 36px rgba(254, 223, 103, 0.36)
+
+
+
+
+
+
+

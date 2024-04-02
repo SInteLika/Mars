@@ -1,0 +1,64 @@
+@import "reset.css"
+@import "fonts"
+
+@mixin adaptive-font-size($min, $max)
+  font-size: clamp(#{$min}px, #{$max / 1920 * 100}vw, #{$max}px )
+
+@mixin gradient-Red-to-Yellow
+  background: linear-gradient(85deg, #C50E57 0%, #FEDF67 100%)
+  background-clip: text
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+@mixin title-h1
+  font-weight: 600
+  line-height: 79%
+  @include adaptive-font-size(50, 128)
+  @include gradient-Red-to-Yellow
+
+body
+  color: white
+  background: url("src/assets/bgImage.png") 0 0/100% no-repeat, linear-gradient(#04000D, #4A0D90)
+  font-family: "Sarpanch", sans-serif
+  overflow-x: hidden
+
+
+
+.container
+  width: 100%
+  max-width: calc(1920px + 240px * 2)
+  margin-inline: auto
+  padding: 0 240px
+  @media(max-width: 1700px)
+    padding: 0 100px
+  @media(max-width: 1100px)
+    padding: 0 50px
+  @media(max-width: 990px)
+    padding: 0 40px
+  @media(max-width: 600px)
+    padding: 0 20px
+
+
+
+
+.gradRedToYel
+  background: linear-gradient(85deg, #C50E57 0%, #FEDF67 100%)
+  background-clip: text
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+
+
+@import "header"
+@import "Home/home"
+@import "btn"
+@import "Home/features"
+@import "Home/token"
+@import "Home/roadmap"
+@import "footer"
+@import "About/our"
+@import "About/features"
+@import "Contact/contact"
+@import "Support/support"
+
+

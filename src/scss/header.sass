@@ -1,0 +1,107 @@
+.header
+  margin: 50px 0 35px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__logo
+    max-width: 100%
+    & img
+      width: 100%
+  &-burger
+    display: none
+  &-nav
+    gap: 78px
+    display: flex
+    font-weight: 500
+    font-size: 25px
+    &__item
+      text-decoration: none
+      color: white
+      cursor: pointers
+      position: relative
+      &:hover:after
+        width: 100%
+      &:after
+        margin-top: 2px
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        width: 0
+        height: 4px
+        background: linear-gradient(85deg, #fedf67 0%, #f75a5c 100%)
+        transition: width .3s ease-out
+        overflow: hidden
+        border-radius: 5px 5px
+
+@media (max-width: 990px)
+  .header
+    position: relative
+    margin-top: 20px
+    &__logo
+      margin-right: 50px
+    &-burger
+      display: block
+      z-index: 2
+      min-width: 30px
+      height: 20px
+      cursor: pointer
+      position: relative
+      overflow-y: hidden
+      & span
+        transition: .5s ease-out
+        position: absolute
+        top: 9px
+        display: block
+        height: 2px
+        width: 30px
+        background-color: white
+      &::before, &::after
+        transition: .5s ease-out
+        position: absolute
+        display: block
+        content: ''
+        height: 2px
+        width: 30px
+        background-color: white
+      &::before
+        top: 0
+      &::after
+        bottom: 0
+      &.active
+        & span
+          transform: scalex(0)
+        &::before
+          transform: rotate(45deg)
+          top: 9px
+        &::after
+          transform: rotate(-45deg)
+          bottom: 9px
+
+
+
+
+
+
+    &-nav
+      position: fixed
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      background: url("src/assets/bgImage.png") 0 0/100% no-repeat, linear-gradient(#04000D, #4A0D90)
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 2
+      height: 100vh
+      transform: translateY(-100%)
+      transition: .5s ease-out
+      &.active
+        transform: translateY(0)
+        transition: .5s ease-out
+
+
+
+
+

@@ -1,0 +1,116 @@
+.roadmap
+  background: url("src/assets/roadmap/ship.png") right center no-repeat
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+  overflow: hidden
+  &::before
+    background: url("src/assets/roadmap/star.png") 0 0 no-repeat
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    z-index: -1
+  &::after
+    background:  url("src/assets/roadmap/planet.png") left bottom no-repeat
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: -1
+  &__title
+    font-weight: 700
+    @include adaptive-font-size(36, 40)
+    margin: 67px 0
+.step
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+  &:last-child
+    margin-bottom: 588px
+  &__line
+    height: 153px
+    width: 5px
+    background-color: #fff
+  &__lineLast
+    height: 70px
+    width: 5px
+    background-color: #fff
+  &-point
+    position: absolute
+    top: 20px
+    width: 350px
+    &_left
+      text-align: right
+      right: 75px
+    &_right
+      left: 75px
+      text-align: left
+    &__title
+      font-weight: 700
+      @include adaptive-font-size(18, 24)
+    &__descr
+      font-weight: 400
+      @include adaptive-font-size(18, 24)
+
+@media (max-width: 1450px)
+  .roadmap
+    background-position-y: 35%
+    background-size: max(200px, 25%)
+@media (max-width: 1150px)
+  .roadmap
+    &::before
+      background-size: max(200px, 20%)
+      top: 250px
+    &::after
+      background-size: max(200px, 40%)
+  .step
+    &:last-child
+      margin-bottom: 450px
+@media (max-width: 720px)
+  .roadmap
+    background: none
+  .step
+    right: 80px
+    &-point
+      line-height: 1.3
+      &_left
+        right: auto
+        left: 60px
+        text-align: left
+      &_right
+        left: 60px
+      &__descr
+        width: 250px
+        margin-bottom: 5px
+@media (max-width: 500px)
+  .roadmap
+    &::before
+      display: none
+  .step
+    &:last-child
+      margin-bottom: 300px
+    &-point
+      &__descr
+        width: 200px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

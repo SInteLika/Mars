@@ -1,0 +1,183 @@
+.contact
+  padding: 140px 0 400px
+  display: flex
+  align-items: center
+  flex-direction: column
+  &-header
+    margin-bottom: 300px
+    position: relative
+    &::before
+      bottom: -5px
+      transform: translateY(100%)
+      content: ''
+      display: block
+      position: absolute
+      height: 22px
+      width: 50%
+      background-color: #F75D5C
+    &::after
+      bottom: -5px
+      right: 0
+      transform: translateY(100%)
+      content: ''
+      display: block
+      position: absolute
+      height: 22px
+      width: 13%
+      background-color: #F75D5C
+    &__title
+      @include title-h1
+      &::after
+        display: block
+        background: url("src/assets/About/our.svg") 0 0 / contain no-repeat
+        width: max(50px, 2.91vw)
+        aspect-ratio: 1
+        content: ''
+        position: absolute
+        top: 0
+        left: -50px
+      &::before
+        display: block
+        background: url("src/assets/About/our.svg") 0 0 / contain no-repeat
+        width: max(50px, 2.91vw)
+        aspect-ratio: 1
+        content: ''
+        position: absolute
+        top: 0
+        right: -50px
+
+  &-form
+    display: flex
+    align-items: center
+    flex-direction: column
+    margin-bottom: 140px
+    position: relative
+    &::before
+      width: 50px
+      height: 50px
+      background: url("src/assets/contact/humanOrange.svg") 0 0 / contain no-repeat
+      position: absolute
+      content: ''
+      top: -1%
+      left: -1%
+      transform: translate(-100%, -100%)
+
+    & input, textarea
+      overflow: hidden
+      font-weight: 500
+      @include adaptive-font-size(16, 20)
+      line-height: 150%
+      padding-left: 26px
+      padding-top: 5px
+      border: none
+      color: white
+      outline: none
+      &::placeholder
+        color: white
+
+    &__name
+      margin-bottom: 62px
+      width: 1093px
+      height: 143px
+      background: url("src/assets/contact/inputName.svg") no-repeat
+
+    &__email
+      margin-bottom: 200px
+      width: 1093px
+      height: 170px
+      background: url("src/assets/contact/inputEmail.svg") no-repeat
+
+    &-message
+      position: relative
+      width: 1120px
+      min-height: 200px
+      aspect-ratio: 2
+      background: url("src/assets/contact/inputMessage.svg") no-repeat
+      &::after
+        position: absolute
+        content: url("src/assets/contact/orange2.svg")
+        right: 0
+        bottom: 0
+        transform: translate(75%, 105%)
+
+      & textarea
+        background-color: rgba(0, 0, 0, 0)
+        overflow: auto
+        resize: none
+        top: 70px
+        position: absolute
+        aspect-ratio: 2.8
+        width: 850px
+        &::-webkit-scrollbar
+          width: 10px
+          border-radius: 20px
+        &::-webkit-scrollbar-thumb
+          border-radius: 20px
+          background: linear-gradient(85deg, #C50E57 0%, #FEDF67 100%)
+
+
+
+@media (max-width: 1400px)
+  .contact
+    padding: 100px 0 200px
+    &-header
+      margin-bottom: 240px
+    &-form
+      &__name, &__email
+        margin-bottom: 80px
+        background-size: contain
+        background-position: center
+        width: clamp(350px, 56.92vw, 1120px)
+      &-message
+        background-size: contain
+        background-position: center
+        width: clamp(350px, 56.92vw, 1120px)
+        & textarea
+          width: clamp(280px, 46.04vw, 1120px)
+
+@media (max-width: 950px)
+  .contact
+    padding: 80px 0 100px
+    &-header
+      margin-bottom: 100px
+    &-form
+      margin-bottom: 40px
+      &__name, &__email
+        height: 100px
+        margin-bottom: 40px
+      &::before
+        display: none
+      &-message
+        & textarea
+          top: 17%
+        &::after
+          display: none
+
+@media (max-width: 750px)
+  .contact-form-message
+    & textarea
+      top: 23%
+      aspect-ratio: 2.8
+
+@media (max-width: 550px)
+  .contact
+    padding: 40px 20px 80px 20px
+    &-header
+      margin-bottom: 60px
+      &::before
+        height: 12px
+      &::after
+        display: none
+      &__title
+        &::before, &::after
+          display: none
+    &-form
+      margin-bottom: 30px
+      &__name, &__email
+        height: 100px
+        margin-bottom: 30px
+      &::before
+        display: none
+      &-message
+        &::after
+          display: none

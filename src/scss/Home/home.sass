@@ -1,0 +1,94 @@
+.home-main
+  background: url('src/assets/mars.png') right top no-repeat
+  width: 100%
+  &__line
+    position: relative
+    left: 2px
+    color: white
+    width: 3px
+    height: 121px
+    background: #f75d5c
+    margin-bottom: 70px
+  &__title
+    max-width: max(400px, 60%)
+    position: relative
+    left: -11px
+    margin-bottom: 76px
+    @include title-h1()
+  &__description
+    font-weight: 500
+    @include adaptive-font-size(20, 36)
+    color: white
+    max-width: 830px
+    margin-bottom: 10px
+  &-footer
+    display: flex
+    align-items: flex-start
+    margin-bottom: 30px
+    &__line
+      margin-right: 72px
+      position: relative
+      left: 2px
+      min-width: 3px
+      height: 385px
+      background: #f75d5c
+    &__btn
+      max-width: 100%
+      margin-top: 26px
+.home-land
+  margin-bottom: 100px
+  &__title
+    @include adaptive-font-size(30, 40)
+    font-weight: 600
+    margin-bottom: 30px
+  &__text
+    @include adaptive-font-size(15, 20)
+    font-weight: 400
+    margin-bottom: 80px
+  &-buttons
+    display: flex
+    gap: 28px
+
+@media(max-width: 1100px)
+  .home-main
+    background-size: 70%
+    &__description
+      max-width: 600px
+@media(max-width: 990px)
+  .home-main
+    &__line
+      margin-bottom: 40px
+    &__title
+      margin-bottom: 40px
+    &__description
+      max-width: 500px
+    &-footer
+      &__line
+        margin-right: 15px
+      &__btn svg
+        width: 90%
+  .home-land
+    &__title
+      margin-bottom: 20px
+    &__text
+      margin-bottom: 50px
+@media(max-width: 600px)
+  .home-main
+    &__line
+      margin-bottom: 30px
+    &__title
+      margin-bottom: 30px
+    &-footer
+      &__line
+        height: 300px
+      &__btn svg
+        width: 80%
+  .home-land
+    home-land
+    &__text
+      margin-bottom: 40px
+    &-buttons
+      flex-direction: column
+
+
+

@@ -1,0 +1,67 @@
+.footer
+  background-color: #3f0B7C
+  padding: 70px 0 46px
+  &-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__title
+    font-weight: 700
+    @include adaptive-font-size(30, 40)
+    margin-bottom: 54px
+  &-company
+    display: flex
+    gap: 260px
+    margin-bottom: 100px
+    &__logo
+      filter: brightness(0) saturate(100%) invert(61%) sepia(12%) saturate(1143%) hue-rotate(226deg) brightness(91%) contrast(83%)
+  &-mars
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    &__text
+      font-weight: 400
+      @include adaptive-font-size(28, 40)
+      background: linear-gradient(180deg, #f06019 0%, #fffe90 100%)
+      background-clip: text
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+    &-logo
+      display: flex
+      gap: 88px
+      &__img
+        width: max(5vw, 40px)
+@media (max-width: 1400px)
+  .footer
+    &-company
+      width: 100%
+      gap: 0
+      justify-content: space-between
+      margin-bottom: 70px
+
+@media (max-width: 800px)
+  .footer
+    padding: 40px
+    &-mars
+      column-gap: 15px
+      &-logo
+        gap: 40px
+@media (max-width: 800px)
+  .footer
+    padding: 20px 5px
+    &__title
+      margin-bottom: 20px
+    &-company
+      margin-bottom: 20px
+    &-mars
+      &-logo
+        gap: 18px
+
+
+
+
+
+      
+
+

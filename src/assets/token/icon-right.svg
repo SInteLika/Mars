@@ -1,0 +1,16 @@
+<svg width="62" height="72" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="svg_1" x1="-0.1292" y1="0.66053" x2="0.87109" y2="0.2375">
+   <stop stop-color="#A43440"/>
+   <stop offset="1" stop-color="#C75225"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_2">
+   <path id="svg_3" fill-rule="evenodd" clip-rule="evenodd" d="m15.11245,-0.08769l24.7403,3.15l22.0548,30.1415l-45.8789,38.8839l-15.9362,-8.3601l15.02,-63.8153z" fill="url(#svg_1)"/>
+   <path id="svg_4" fill-rule="evenodd" clip-rule="evenodd" d="m15.11245,-0.08769l6.8545,30.2603l16.8526,6.7216l23.088,-3.6904l-19.4972,-31.4044l-27.2979,-1.8871z" fill="#FF7C25"/>
+   <path id="svg_5" opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="m21.96695,30.17261l-21.8745,33.555l15.02,-63.8153l6.8545,30.2603z" fill="#A67C4C"/>
+  </g>
+ </g>
+</svg>
