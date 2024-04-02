@@ -12,17 +12,17 @@ export default function Header() {
                 </div>
                 <nav className={`header-nav ${isActive ? 'active' : ''}`}>
                     <NavLink to={'/'} className="header-nav__item"
-                             onClick={() => document.body.style.overflowY = isActive ? 'auto' : 'hidden'}>Home</NavLink>
+                             onClick={() => document.body.style.overflowY = 'auto' }>Home</NavLink>
                     <NavLink to={'/about'} className="header-nav__item"
-                             onClick={() => document.body.style.overflowY = isActive ? 'auto' : 'hidden'}>About</NavLink>
+                             onClick={() => document.body.style.overflowY = 'auto'}>About</NavLink>
                     <NavLink to={'/contact'} className="header-nav__item"
-                             onClick={() => document.body.style.overflowY = isActive ? 'auto' : 'hidden'}>Contact</NavLink>
+                             onClick={() => document.body.style.overflowY = 'auto'}>Contact</NavLink>
                     <NavLink to={'/support'} className="header-nav__item"
-                             onClick={() => document.body.style.overflowY = isActive ? 'auto' : 'hidden'}>Support</NavLink>
+                             onClick={() => document.body.style.overflowY = 'auto'}>Support</NavLink>
                 </nav>
                 <div onClick={() => {
                     setIsActive(!isActive)
-                    document.body.style.overflowY = 'auto'
+                    document.body.style.overflowY = isActive ? 'auto' : 'hidden'
                 }}
                      className={`header-burger ${isActive ? 'active' : ''}`}>
                     <span></span>
