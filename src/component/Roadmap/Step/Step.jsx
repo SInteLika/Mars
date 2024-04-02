@@ -1,7 +1,7 @@
 export default function Step({text, position, last}) {
     return (
         <div className={'step'}>
-            <img src="public/images/roadmap/icon.svg" alt="" className="step__icon"/>
+            <img src="/images/roadmap/icon.svg" alt="" className="step__icon"/>
             <div className={last ? `step__lineLast` : 'step__line'}></div>
             <div className={'step-point ' + 'step-point_' + position}>
                 <div className="step-point__title gradRedToYel">{text.title}</div>
