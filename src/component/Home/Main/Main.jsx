@@ -1,5 +1,4 @@
 import Button from "../../utils/Button.jsx";
-import Features from "./Features/Features.jsx";
 import ButtonFill from "../../utils/ButtonFill.jsx";
 
 export default function Main() {
@@ -33,7 +32,7 @@ export default function Main() {
                         <Button text={'Token Metrics '}/>
                     </div>
                 </div>
-                <Features/>
+
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
-import Logo1 from '../../../public/images/footer/logo1.svg?react'
-import Logo2 from '../../../public/images/footer/logo2.svg?react'
-import Logo3 from '../../../public/images/footer/logo3.svg?react'
-import Logo4 from '../../../public/images/footer/logo4.svg?react'
+import Logo1 from '../../assets/footer/logo1.svg?react'
+import Logo2 from '../../assets/footer/logo2.svg?react'
+import Logo3 from '../../assets/footer/logo3.svg?react'
+import Logo4 from '../../assets/footer/logo4.svg?react'
 
 export default function Footer() {
 
@@ -22,6 +22,7 @@ export default function Footer() {
                             <img src="/images/footer/fb.svg" alt="" className="footer-mars-logo__img"/>
                             <img src="/images/footer/twitter.svg" alt="" className="footer-mars-logo__img"/>
                             <img src="/images/footer/in.svg" alt="" className="footer-mars-logo__img"/>
+
                         </div>
                     </div>
                 </div>

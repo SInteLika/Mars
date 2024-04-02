@@ -27,7 +27,7 @@ export default function Support() {
                     <div className="support-faq-questions">
                         <Question
                             text={'1. What is Mars colonization, and why are humans planning to establish a presence on Mars?'}/>
-                        <Question text={'2. How will humans survive on Mars? What challenges do they face?'}/>}
+                        <Question text={'2. How will humans survive on Mars? What challenges do they face?'}/>
                         <Question
                             text={'3. How will colonization affect Mars\' environment and potential for future scientific research?'}/>
                         <Question text={'4. What are the timelines and international cooperation involved in Mars colonization?'} />
