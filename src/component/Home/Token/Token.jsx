@@ -5,9 +5,9 @@ export default function Token() {
             <div className="container">
                 <div className="token-wrapper">
                     <div className="token-header">
-                        <img src="src/assets/token/icon-left.svg" alt="" className="token-header__left"/>
+                        <img src="/images/token/icon-left.svg" alt="" className="token-header__left"/>
                         <div className="token-header__title">MRS token</div>
-                        <img src="src/assets/token/2.svg" alt="" className="token-header__right"/>
+                        <img src="/images/token/2.svg" alt="" className="token-header__right"/>
                     </div>
                     <div className="token__text">
                         MRS token is the main in-game currency. It will be used for trading, exchanging, improving the

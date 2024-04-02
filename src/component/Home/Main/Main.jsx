@@ -18,7 +18,7 @@ export default function Main() {
                     </div>
                 </div>
                 <div className="home-land">
-                    <img src="src/assets/landIcon.svg" alt="" className="home-land__icon"/>
+                    <img src="/images/landIcon.svg" alt="" className="home-land__icon"/>
                     <div className="home-land__title">Land in MarsColony</div>
                     <div className="home-land__text">
                         Mars land is split into twenty-one thousand tokenized plots of land, called MarsColony MC
@@ -33,7 +33,7 @@ export default function Main() {
                         <Button text={'Token Metrics '}/>
                     </div>
                 </div>
-                {/*<Features/>*/}
+                <Features/>
             </div>
         </div>
     )

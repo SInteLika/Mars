@@ -31,7 +31,7 @@
 }
 body {
   color: white;
-  background: url("src/assets/bgImage.png") 0 0/100% no-repeat, linear-gradient(#04000D, #4A0D90);
+  background: url("public/images/bgImage.png") 0 0/100% no-repeat, linear-gradient(#04000D, #4A0D90);
   font-family: "Sarpanch", sans-serif;
   overflow-x: hidden;
 }
@@ -171,7 +171,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url("src/assets/bgImage.png") 0 0/100% no-repeat, linear-gradient(#04000D, #4A0D90);
+    background: url("public/images/bgImage.png") 0 0/100% no-repeat, linear-gradient(#04000D, #4A0D90);
     top: 0;
     left: 0;
     right: 0;
@@ -187,7 +187,7 @@ body {
   }
 }
 .home-main {
-  background: url("src/assets/mars.png") right top no-repeat;
+  background: url("public/images/mars.png") right top no-repeat;
   width: 100%;
 }
 .home-main__line {
@@ -479,7 +479,7 @@ body {
   }
 }
 .token {
-  background-image: url("src/assets/token/bg.png");
+  background-image: url("public/images/token/bg.png");
 }
 .token-wrapper {
   display: flex;
@@ -532,7 +532,7 @@ body {
   }
 }
 .roadmap {
-  background: url("src/assets/roadmap/ship.png") right center no-repeat;
+  background: url("public/images/roadmap/ship.png") right center no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -540,7 +540,7 @@ body {
   overflow: hidden;
 }
 .roadmap::before {
-  background: url("src/assets/roadmap/star.png") 0 0 no-repeat;
+  background: url("public/images/roadmap/star.png") 0 0 no-repeat;
   content: "";
   position: absolute;
   width: 100%;
@@ -550,7 +550,7 @@ body {
   z-index: -1;
 }
 .roadmap::after {
-  background: url("src/assets/roadmap/planet.png") left bottom no-repeat;
+  background: url("public/images/roadmap/planet.png") left bottom no-repeat;
   content: "";
   position: absolute;
   width: 100%;
@@ -779,7 +779,7 @@ body {
 }
 .about-our-header::after {
   display: block;
-  background: url("src/assets/About/our.svg") 0 0/contain no-repeat;
+  background: url("public/images/About/our.svg") 0 0/contain no-repeat;
   width: max(40px, 2.91vw);
   aspect-ratio: 1;
   content: "";
@@ -789,7 +789,7 @@ body {
 }
 .about-our-header::before {
   display: block;
-  background: url("src/assets/About/our.svg") 0 0/contain no-repeat;
+  background: url("public/images/About/our.svg") 0 0/contain no-repeat;
   width: max(40px, 2.91vw);
   aspect-ratio: 1;
   content: "";
@@ -847,14 +847,14 @@ body {
 }
 .about-features__title::before {
   display: block;
-  content: url("src/assets/token/icon-left.svg");
+  content: url("public/images/token/icon-left.svg");
   position: absolute;
   top: -130%;
   left: -65px;
 }
 .about-features__title::after {
   display: block;
-  content: url("src/assets/token/icon-right.svg");
+  content: url("public/images/token/icon-right.svg");
   position: absolute;
   top: -130%;
   right: -65px;
@@ -871,7 +871,7 @@ body {
   margin: 200px 0;
 }
 .about-features-section-wrapper {
-  background: url("src/assets/token/bg.png");
+  background: url("public/images/token/bg.png");
   margin-bottom: 240px;
 }
 .about-features-section-photo {
@@ -886,7 +886,7 @@ body {
 }
 .about-features-section-photo::after {
   display: block;
-  content: url("src/assets/About/orangeHuman.svg");
+  content: url("public/images/About/orangeHuman.svg");
   position: absolute;
   left: 0;
   bottom: 0;
@@ -915,7 +915,7 @@ body {
 }
 .about-features-section-descr_img::after {
   display: block;
-  content: url("src/assets/About/orange.svg");
+  content: url("public/images/About/orange.svg");
   position: absolute;
   top: -180px;
   right: -30px;
@@ -1050,7 +1050,7 @@ body {
 }
 .contact-header__title::after {
   display: block;
-  background: url("src/assets/About/our.svg") 0 0/contain no-repeat;
+  background: url("public/images/About/our.svg") 0 0/contain no-repeat;
   width: max(50px, 2.91vw);
   aspect-ratio: 1;
   content: "";
@@ -1060,7 +1060,7 @@ body {
 }
 .contact-header__title::before {
   display: block;
-  background: url("src/assets/About/our.svg") 0 0/contain no-repeat;
+  background: url("public/images/About/our.svg") 0 0/contain no-repeat;
   width: max(50px, 2.91vw);
   aspect-ratio: 1;
   content: "";
@@ -1078,7 +1078,7 @@ body {
 .contact-form::before {
   width: 50px;
   height: 50px;
-  background: url("src/assets/contact/humanOrange.svg") 0 0/contain no-repeat;
+  background: url("public/images/contact/humanOrange.svg") 0 0/contain no-repeat;
   position: absolute;
   content: "";
   top: -1%;
@@ -1103,24 +1103,24 @@ body {
   margin-bottom: 62px;
   width: 1093px;
   height: 143px;
-  background: url("src/assets/contact/inputName.svg") no-repeat;
+  background: url("public/images/contact/inputName.svg") no-repeat;
 }
 .contact-form__email {
   margin-bottom: 200px;
   width: 1093px;
   height: 170px;
-  background: url("src/assets/contact/inputEmail.svg") no-repeat;
+  background: url("public/images/contact/inputEmail.svg") no-repeat;
 }
 .contact-form-message {
   position: relative;
   width: 1120px;
   min-height: 200px;
   aspect-ratio: 2;
-  background: url("src/assets/contact/inputMessage.svg") no-repeat;
+  background: url("public/images/contact/inputMessage.svg") no-repeat;
 }
 .contact-form-message::after {
   position: absolute;
-  content: url("src/assets/contact/orange2.svg");
+  content: url("public/images/contact/orange2.svg");
   right: 0;
   bottom: 0;
   transform: translate(75%, 105%);
@@ -1271,7 +1271,7 @@ body {
 }
 .support-header__title::after {
   display: block;
-  background: url("src/assets/About/our.svg") 0 0/contain no-repeat;
+  background: url("public/images/About/our.svg") 0 0/contain no-repeat;
   width: max(50px, 2.91vw);
   height: 100%;
   content: "";
@@ -1281,7 +1281,7 @@ body {
 }
 .support-header__title::before {
   display: block;
-  background: url("src/assets/About/our.svg") 0 0/contain no-repeat;
+  background: url("public/images/About/our.svg") 0 0/contain no-repeat;
   width: max(50px, 2.91vw);
   height: 100%;
   content: "";
@@ -1292,7 +1292,7 @@ body {
 .support-hello {
   padding: 68px 0 105px 202px;
   width: 100%;
-  background: linear-gradient(rgba(1, 4, 15, 0.79), rgba(1, 4, 15, 0.79)), url("src/assets/support/bg.jpg");
+  background: linear-gradient(rgba(1, 4, 15, 0.79), rgba(1, 4, 15, 0.79)), url("public/images/support/bg.jpg");
 }
 .support-hello__title {
   font-weight: 600;
@@ -1319,7 +1319,7 @@ body {
   width: 912px;
   height: 166px;
   margin-bottom: 56px;
-  background: rgba(0, 0, 0, 0) url("src/assets/support/input.svg") no-repeat;
+  background: rgba(0, 0, 0, 0) url("public/images/support/input.svg") no-repeat;
 }
 .support-hello__input::placeholder {
   color: white;

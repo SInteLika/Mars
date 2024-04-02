@@ -7,7 +7,7 @@ export default function Features() {
             <div className="about-features-container">
                 <div className="about-features-section">
                     <div className="about-features-section-photo">
-                        <img src="src/assets/About/features1.png" alt=""
+                        <img src="/images/About/features1.png" alt=""
                              className="about-features-section-photo__img about-features-section-photo__img_left"/>
                     </div>
                     <div className="about-features-section-descr about-features-section-descr_img">
@@ -40,7 +40,7 @@ export default function Features() {
                             </div>
                         </div>
                         <div className="about-features-section-photo about-features-section_order">
-                            <img src="src/assets/About/features2.png" alt=""
+                            <img src="/images/About/features2.png" alt=""
                                  className="about-features-section-photo__img about-features-section-photo__img_right"/>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ export default function Features() {
             <div className="about-features-container">
                 <div className="about-features-section">
                     <div className="about-features-section-photo">
-                        <img src="src/assets/About/features3.png" alt=""
+                        <img src="/images/About/features3.png" alt=""
                              className="about-features-section-photo__img about-features-section-photo__img_left"/>
                     </div>
                     <div className="about-features-section-descr about-features-section-descr_img">
