@@ -22,7 +22,7 @@ export default function Header() {
                 </nav>
                 <div onClick={() => {
                     setIsActive(!isActive)
-                    document.body.style.overflowY = isActive ? 'auto' : 'hidden'
+                    document.body.style.overflowY = 'auto'
                 }}
                      className={`header-burger ${isActive ? 'active' : ''}`}>
                     <span></span>
