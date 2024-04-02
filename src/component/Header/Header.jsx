@@ -8,7 +8,7 @@ export default function Header() {
         <div className="container">
             <header className="header">
                 <div className="header__logo">
-                    <img src="public/images/logo.svg" alt=""/>
+                    <img src="/images/logo.svg" alt=""/>
                 </div>
                 <nav className={`header-nav ${isActive ? 'active' : ''}`}>
                     <NavLink to={'/'} className="header-nav__item"
