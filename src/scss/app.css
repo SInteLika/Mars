@@ -1077,7 +1077,7 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  left: -50px;
+  left: -80px;
 }
 .contact-header__title::before {
   display: block;
@@ -1087,7 +1087,7 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  right: -50px;
+  right: -90px;
 }
 .contact-form {
   display: flex;
@@ -1298,7 +1298,7 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  left: -60px;
+  left: -80px;
 }
 .support-header__title::before {
   display: block;
@@ -1308,7 +1308,7 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  right: -60px;
+  right: -100px;
 }
 .support-hello {
   padding: 68px 0 105px 202px;
